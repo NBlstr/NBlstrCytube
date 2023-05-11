@@ -1,61 +1,117 @@
-.accountbutton { text-transform:uppercase;
+body {
+ background-image: url("https://i.ibb.co/qxmyLkR/b6475fe6109775d51825b1701514a6c05a923e44.webp");
+ background-color: #cccccc;
+ background-size: contain;
 }
-.accountbutton > a.dropdown-toggle {
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    margin-top: 28px;
+#chatwrap{
+ background-color: #272b30;
+ padding-left:0px;
 }
-.vjs-polyzor-skin .vjs-live-control {
-    position: absolute;
-    height: auto;
-    top: 0;
-    right: 25px!important;
+#main{
+ margin-left: -10px;
+ margin-right: -25px;
 }
-.vjs-live-display {
-    padding: 12px;
+.nick-hover{
+  background-color: rgba(17,17,34,0.9);
 }
-.profileImage2 {
-  grid-area: image;
-  display: inline-block;
-  border-radius: 10px;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  margin-right: 8px;
-  background-color: #43b581;
-  position: relative;
-  -webkit-mask-size: 100%;
-  -webkit-mask-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzUiIGhlaWdodD0iMzUiIHZpZXdCb3g9IjAgMCAzNSAzNSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMCAxNEMwIDguMzQzMTUgMC43NDI2NDEgNC4yNTczNiAyLjUgMi41QzQuMjU3MzYgMC43NDI2NDEgOCAwIDE0IDBIMjFDMjcgMCAzMC43NDI2IDAuNzQyNjQxIDMyLjUgMi41QzM0LjI1NzQgNC4yNTczNiAzNSA4IDM1IDE0VjIxQzM1IDI3IDM0LjI1NzQgMzAuNzQyNiAzMi41IDMyLjVDMzAuNzQyNiAzNC4yNTc0IDI3IDM1IDIxIDM1SDE0QzggMzUgNC4yNTczNiAzNC4yNTc0IDIuNSAzMi41QzAuNzQyNjQxIDMwLjc0MjYgMCAyNi42NTY5IDAgMjFWMTRaIiBmaWxsPSIjODA4MDgwIi8+PC9zdmc+);
-  mask-size: 100%;
-  mask-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzUiIGhlaWdodD0iMzUiIHZpZXdCb3g9IjAgMCAzNSAzNSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMCAxNEMwIDguMzQzMTUgMC43NDI2NDEgNC4yNTczNiAyLjUgMi41QzQuMjU3MzYgMC43NDI2NDEgOCAwIDE0IDBIMjFDMjcgMCAzMC43NDI2IDAuNzQyNjQxIDMyLjUgMi41QzM0LjI1NzQgNC4yNTczNiAzNSA4IDM1IDE0VjIxQzM1IDI3IDM0LjI1NzQgMzAuNzQyNiAzMi41IDMyLjVDMzAuNzQyNiAzNC4yNTc0IDI3IDM1IDIxIDM1SDE0QzggMzUgNC4yNTczNiAzNC4yNTc0IDIuNSAzMi41QzAuNzQyNjQxIDMwLjc0MjYgMCAyNi42NTY5IDAgMjFWMTRaIiBmaWxsPSIjODA4MDgwIi8+PC9zdmc+);
+#wrap {
+  padding: 0px;
 }
-.profileImage {
-    /* grid-area: image; */
-    /* display: inline-flex; */
-    border-radius: 10px;
-	object-fit: cover;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    margin-right: 5px;
-    background-color: #43b581;
-    -webkit-mask-size: 100%;
-    -webkit-mask-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzUiIGhlaWdodD0iMzUiIHZpZXdCb3g9IjAgMCAzNSAzNSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMCAxNEMwIDguMzQzMTUgMC43NDI2NDEgNC4yNTczNiAyLjUgMi41QzQuMjU3MzYgMC43NDI2NDEgOCAwIDE0IDBIMjFDMjcgMCAzMC43NDI2IDAuNzQyNjQxIDMyLjUgMi41QzM0LjI1NzQgNC4yNTczNiAzNSA4IDM1IDE0VjIxQzM1IDI3IDM0LjI1NzQgMzAuNzQyNiAzMi41IDMyLjVDMzAuNzQyNiAzNC4yNTc0IDI3IDM1IDIxIDM1SDE0QzggMzUgNC4yNTczNiAzNC4yNTc0IDIuNSAzMi41QzAuNzQyNjQxIDMwLjc0MjYgMCAyNi42NTY5IDAgMjFWMTRaIiBmaWxsPSIjODA4MDgwIi8+PC9zdmc+);
-    mask-size: 100%;
-    mask-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzUiIGhlaWdodD0iMzUiIHZpZXdCb3g9IjAgMCAzNSAzNSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMCAxNEMwIDguMzQzMTUgMC43NDI2NDEgNC4yNTczNiAyLjUgMi41QzQuMjU3MzYgMC43NDI2NDEgOCAwIDE0IDBIMjFDMjcgMCAzMC43NDI2IDAuNzQyNjQxIDMyLjUgMi41QzM0LjI1NzQgNC4yNTczNiAzNSA4IDM1IDE0VjIxQzM1IDI3IDM0LjI1NzQgMzAuNzQyNiAzMi41IDMyLjVDMzAuNzQyNiAzNC4yNTc0IDI3IDM1IDIxIDM1SDE0QzggMzUgNC4yNTczNiAzNC4yNTc0IDIuNSAzMi41QzAuNzQyNjQxIDMwLjc0MjYgMCAyNi42NTY5IDAgMjFWMTRaIiBmaWxsPSIjODA4MDgwIi8+PC9zdmc+);
-    padding: 0px;
-    margin-left: 5px;
-    position: absolute;
-    left: 0;
-    -webkit-transition: .4s;
-    transition: .4s;
-    -webkit-transition: all 1s cubic-bezier(1, -0.565, 0.075, 1.495);
-    transition: all 1s cubic-bezier(1, -0.565, 0.075, 1.495);
+#userlisttoggle{
+ padding-right: 5px;
 }
-.profileImage:before {
-    position: absolute;
-	border: 10px solid red;
+#modflair{
+ margin-right: 5px;
 }
-.profileImage:hover {
-    padding: 1px;
-    transform: scale(1.3);
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
 }
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #000000; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #444; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+.form-control{
+  border-bottom-left-radius:5px;
+  border-bottom-right-radius:5px;
+}
+
+#footer{
+ display: none;
+}
+
+#chatwrap{
+ padding-right:3px;
+ margin-bottom:5px;
+}
+
+#videowrap{
+ padding-left:3px;
+ margin-bottom:5px;
+}
+
+#pollwrap {
+ /*position: fixed;
+ z-index: 100;
+ width: 42.5%;
+ top:60%;*/
+ padding-right: 5px;
+} 
+
+
+#leftcontrols {
+  position: relative; /* set leftcontrols to be the reference point for the absolute positioning of videocontrols */
+}
+
+#videocontrols {
+  top: 0;
+  right: calc(100% + 20px); /* set the right property to be the width of the leftcontrols plus 10px of margin */
+}
+
+#voteskip::before{
+ content: "Vote Skip";
+ padding: 2px;
+}
+
+#resize-video-smaller{
+ padding-right: 5px;
+}
+
+.server-msg-reconnect{
+ border-radius:5px;
+}
+
+#currenttitle{
+ padding-left: 5px;
+}
+
+#pollwrap > div {
+ margin-top: 5px;
+}
+
+.close.pull-right{
+ padding-left: 5px;
+}
+
+.well{
+padding: 5px;
+}
+
+#pollwrap > div > h3 {
+ position: relative;
+ margin-top: 5px;
+}
+
+/* TODO: fix the css on the poll close button. it's misaligned with the actual button so it doesn't respond */
